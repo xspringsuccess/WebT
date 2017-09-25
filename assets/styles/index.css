@@ -2,6 +2,9 @@
 * {
 	font-weight: 400;
 }
+body, input, textarea {
+    font-family: Lato,Arial,Verdana sans-serif;
+}
 .wrapper,main {
 	position: relative;
 }
@@ -26,11 +29,13 @@ address {
 	font-style:normal;
 }
 .f,.m,.s {
-	display:none
+	display:none;
 }
+
+
 /* header------------------------------------ */
 header nav ul li:hover {
-	color: #26a65b
+	color: #26a65b;
 }
 header .call .tel:hover {
 	text-decoration: none;
@@ -56,9 +61,7 @@ li {
    	display: list-item;
    	text-align: -webkit-match-parent;
 }
-.s {
-	display: none;
-}
+
 
 @media (min-width: 1144px) {
 	header {
@@ -360,10 +363,10 @@ li {
 /*动画----------------------*/
 @media (max-height: 844px) and (min-width: 1144px) {
 	/*动画背景透明度--------------*/
-	main .block1 .wrapper .animation {
+/*	main .block1 .wrapper .animation {
 	    -webkit-filter: brightness(70%);
 	    filter: brightness(70%);
-	}
+	}*/
 	/*船----------*/
 	.block1 .boat {
 	    will-change: transform;
@@ -417,7 +420,7 @@ li {
 		    -webkit-transform: translate(-345px,430px);
 		    transform: translate(-345px,430px);
 		}
-		100%, 90% {
+		90%, 100%{
 		    -webkit-transform: translate(-89.5px,283px);
 		    transform: translate(-89.5px,283px);
 		}
@@ -697,7 +700,301 @@ li {
 }
 
 /*---------小屏模式下--------*/
+
 @media (max-width: 1143px) and (min-width: 768px) {
+	/*阴影*/
+/*	main .block1 .wrapper .animation {
+	    -webkit-filter: brightness(70%);
+	    filter: brightness(70%);
+	}*/
+	/*动画---------------*/
+	.block1 .boat {
+	    will-change: transform;
+	    position: absolute;
+	    width: 793px;
+	    height: 520px;
+	    right: 0;
+	    top: 20px;
+	    background: url(../images/bigship2.png) 50% 50% no-repeat;
+	    background-size: 472px auto;
+	    margin-top: -270px;
+	    z-index: 1;
+	    -webkit-animation: firstboatm 61.11111111s ease infinite;
+	    animation: firstboatm 61.11111111s ease infinite;
+	}
+	@keyframes firstboatm {
+		0% {
+		    -webkit-transform: translate(842px,-146px);
+		    transform: translate(842px,-146px);
+		}
+		40%, 60% {
+		    -webkit-transform: translate(5px,331px);
+		    transform: translate(5px,331px);
+		}
+		100% {
+		    -webkit-transform: translate(-832px,808px);
+		    transform: translate(-832px,808px);
+		}
+	}
+	.block1 .crane1, .block1 .crane2, .block1 div[class^=car] {
+	    position: absolute;
+	    top: 0;
+	    will-change: transform;
+	}
+	.block1 .crane1, .block1 .crane2 {
+	    width: 475px;
+	    height: 379px;
+	    left: 0;
+	}
+	.block1 .crane1 {
+	    background: url(../images/crane.png) 50% 50% no-repeat;
+	    background-size: 283px auto;
+	    z-index: 3;
+	    -webkit-animation: crane1m 30.55555556s linear infinite alternate;
+	    animation: crane1m 30.55555556s linear infinite alternate;
+	}
+	@keyframes crane1m {
+		0% {
+		    -webkit-transform: translate(-140.6px,42.4px);
+		    transform: translate(-140.6px,42.4px);
+		}
+		49% {
+		    -webkit-transform: translate(-324.56px,148.24px);
+		    transform: translate(-324.56px,148.24px);
+		}
+		100%, 90% {
+		    -webkit-transform: translate(-171.26px,60.04px);
+		    transform: translate(-171.26px,60.04px);
+		}
+	}
+	.block1 .crane2 {
+	    background: url(../images/crane.png) 50% 50% no-repeat;
+	    background-size: 283px auto;
+	    z-index: 2;
+	    -webkit-animation: crane2m 30.55555556s linear infinite alternate;
+	    animation: crane2m 30.55555556s linear infinite alternate;
+	}
+	@keyframes crane2m {
+		0% {
+		    -webkit-transform: translate(-7.74px,-34.04px);
+		    transform: translate(-7.74px,-34.04px);
+		}
+		36% {
+		    -webkit-transform: translate(114.9px,-104.6px);
+		    transform: translate(114.9px,-104.6px);
+		}
+		100%, 90% {
+		    -webkit-transform: translate(-69.06px,1.24px);
+		    transform: translate(-69.06px,1.24px);
+		}
+	}
+	.block1 div.car1, .block1 div.car2 {
+	    -webkit-animation: cartotop 6.25s linear infinite;
+	}
+	.block1 div[class^=car] {
+	    left: -127px;
+	}
+	.block1 div.car1 {
+	    width: 24px;
+	    height: 16px;
+	    background: url(../images/car1.png) 50% 50% no-repeat;
+	    background-size: 14px auto;
+	    z-index: 1;
+	    left: -150px;
+	    margin-left: -12px;
+	    margin-top: -8px;
+	    animation: cartotop 6.25s linear infinite;
+	    -webkit-animation-delay: -.4s;
+	    animation-delay: -.4s;
+	}
+	.block1 div.car2, .block1 div.car4 {
+	    width: 26px;
+	    z-index: 1;
+	    margin-left: -13px;
+	    margin-top: -9px;
+	}
+	.block1 div.car2 {
+	    height: 17px;
+	    background: url(../images/car2.png) 50% 50% no-repeat;
+	    background-size: 15px auto;
+	    left: -150px;
+	    animation: cartotop 6.25s linear infinite;
+	    -webkit-animation-delay: 0s;
+	    animation-delay: 0s;
+	}
+	.block1 div.car11 {
+	    width: 24px;
+	    height: 16px;
+	    background: url(../images/car1.png) 50% 50% no-repeat;
+	    background-size: 14px auto;
+	    z-index: 1;
+	    left: -150px;
+	    margin-left: -12px;
+	    margin-top: -8px;
+	    -webkit-transform: translateY(-100px);
+	    transform: translateY(-100px);
+	    -webkit-animation: cartotop 6.25s linear infinite;
+	    animation: cartotop 6.25s linear infinite;
+	    -webkit-animation-delay: 3s;
+	    animation-delay: 3s;
+	}
+	@keyframes cartotop {
+		0% {
+		    -webkit-transform: translate(-430px,356px);
+		    transform: translate(-430px,356px);
+		}
+		100% {
+		    -webkit-transform: translate(220px,-20px);
+		    transform: translate(220px,-20px);
+		}
+	}
+	.block1 div.car3 {
+	    width: 29px;
+	    height: 20px;
+	    background: url(../images/car3.png) 50% 50% no-repeat;
+	    background-size: 17px auto;
+	    z-index: 1;
+	    margin-left: -15px;
+	    margin-top: -10px;
+	    -webkit-animation: cartoleft 12.5s linear infinite;
+	    animation: cartoleft 12.5s linear infinite;
+	    -webkit-animation-delay: -4s;
+	    animation-delay: -4s;
+	}
+	.block1 div.car4 {
+	    height: 18px;
+	    background: url(../images/car4.png) 50% 50% no-repeat;
+	    background-size: 15px auto;
+	    -webkit-animation: cartoleft 12.5s linear infinite;
+	    animation: cartoleft 12.5s linear infinite;
+	    -webkit-animation-delay: -3.2s;
+	    animation-delay: -3.2s;
+	}
+	.block1 div.car6, .block1 div.car7 {
+	    -webkit-animation: cartoleft 12.5s linear infinite;
+	    z-index: 1;
+	}
+	.block1 div.car6 {
+	    width: 58px;
+	    height: 35px;
+	    background: url(../images/car6.png) 50% 50% no-repeat;
+	    background-size: 35px auto;
+	    margin-left: -29px;
+	    margin-top: -18px;
+	    animation: cartoleft 12.5s linear infinite;
+	    -webkit-animation-delay: -1.6s;
+	    animation-delay: -1.6s;
+	}
+	.block1 div.car7 {
+	    width: 26px;
+	    height: 18px;
+	    background: url(../images/car7.png) 50% 50% no-repeat;
+	    background-size: 15px auto;
+	    margin-left: -13px;
+	    margin-top: -9px;
+	    animation: cartoleft 12.5s linear infinite;
+	    -webkit-animation-delay: -.8s;
+	    animation-delay: -.8s;
+	}
+	.block1 div.car8 {
+	    width: 59px;
+	    height: 40px;
+	    background: url(../images/car8.png) 50% 50% no-repeat;
+	    background-size: 35px auto;
+	    z-index: 1;
+	    margin-left: -30px;
+	    margin-top: -20px;
+	    -webkit-transform: translateY(-100px);
+	    transform: translateY(-100px);
+	    -webkit-animation: cartoleft 12.5s linear infinite;
+	    animation: cartoleft 12.5s linear infinite;
+	    -webkit-animation-delay: .8s;
+	    animation-delay: .8s;
+	}
+	@keyframes cartoleft {
+		0% {
+		    -webkit-transform: translate(160px,-20px);
+		    transform: translate(160px,-20px);
+		}
+		100% {
+		    -webkit-transform: translate(-490px,356px);
+		    transform: translate(-490px,356px);
+		}
+	}
+	.block1 div.car5 {
+	    z-index: 2;
+	    width: 39px;
+	    height: 24px;
+	    background: url(../images/car5.png) 50% 50% no-repeat;
+	    background-size: 23px auto;
+	    left: -140px;
+	    margin-left: -20px;
+	    margin-top: -12px;
+	    -webkit-animation: cartoleft2 7.14285714s linear infinite;
+	    animation: cartoleft2 7.14285714s linear infinite;
+	    -webkit-animation-delay: -1.6s;
+	    animation-delay: -1.6s;
+	}
+	.block1 div.car10, .block1 div.car9 {
+	    width: 26px;
+	    height: 18px;
+	    margin-left: -13px;
+	    margin-top: -9px;
+	    -webkit-animation: cartoleft2 7.14285714s linear infinite;
+	    z-index: 2;
+	    left: -140px;
+	}
+	.block1 div.car9 {
+	    background: url(../images/car7.png) 50% 50% no-repeat;
+	    background-size: 15px auto;
+	    animation: cartoleft2 7.14285714s linear infinite;
+	    -webkit-animation-delay: -4s;
+	    animation-delay: -4s;
+	}
+	.block1 div.car10 {
+	    background: url(../images/car4.png) 50% 50% no-repeat;
+	    background-size: 15px auto;
+	    animation: cartoleft2 7.14285714s linear infinite;
+	    -webkit-animation-delay: -3.2s;
+	    animation-delay: -3.2s;
+	}
+	@keyframes cartoleft2 {
+		0% {
+		    -webkit-transform: translate(186px,-20px);
+		    transform: translate(186px,-20px);
+		}
+		100% {
+		    -webkit-transform: translate(-464px,356px);
+		    transform: translate(-464px,356px);
+		}
+	}
+	.block1 div.car12 {
+	    width: 168px;
+	    height: 103px;
+	    background: url(../images/trucks.png) 50% 50% no-repeat;
+	    background-size: 100px auto;
+	    margin-left: -84px;
+	    margin-top: -52px;
+	    z-index: 1;
+	    left: 243px;
+	    top: 96px;
+	    -webkit-transform: translate(0,0);
+	    transform: translate(0,0);
+	    -webkit-animation: trucks 12.5s ease-in forwards;
+	    animation: trucks 12.5s ease-in forwards;
+	    -webkit-animation-delay: 5s;
+	    animation-delay: 5s;
+	}
+	@keyframes trucks {
+		0% {
+		    -webkit-transform: translate(0,0);
+		    transform: translate(0,0);
+		}
+		100% {
+		    -webkit-transform: translate(-1300px,752px);
+		    transform: translate(-1300px,752px);
+		}
+	}
 	.block1, .block2, .block3, .block4, .block6 {
 	    overflow: hidden;
 	}
@@ -897,6 +1194,90 @@ li {
 	.f {
 	    display: block;
 	}
+	.block3 form {
+	    position: relative;
+	    z-index: 1;
+	    margin-left: -12px;
+	}
+	.block3 form input[type=text] {
+	    width: 275px;
+	    height: 48px;
+	    padding-top: 8px;
+	    border: 1px solid #fefefe;
+	    border-radius: 3px;
+	}
+	.block3 form input[type=text], .block3 form textarea {
+	    font-size: 20px;
+	    margin: 0 13px 36px;
+	    padding-left: 20px;
+	    background: 0 0;
+	    color: #fefefe;
+	    float: left;
+	}
+	.block3 form input::-webkit-input-placeholder, .block3 form textarea::-webkit-input-placeholder {
+		color: #fff;
+		opacity: 1;
+	}
+	.block3 form textarea {
+	    width: 598px;
+	    height: 38px;
+	    padding-top: 18px;
+	    border: 1px solid #fefefe;
+	    border-radius: 3px;
+	    resize: none;
+	}
+	.block3 form input[type=submit] {
+	    width: 297px;
+	    border: none;
+	    height: 58px;
+	    background: #26a65b;
+	    color: #fefefe;
+	    font-weight: 700;
+	    text-align: center;
+	    line-height: 58px;
+	    border-radius: 3px;
+	    letter-spacing: 3px;
+	    margin-left: 13px;
+	    cursor: pointer;
+	    font-size: 24px;
+	}
+	.block3 form input[type=checkbox] {
+	    display: none;
+	}
+	.block3 form .agreetosend {
+	    color: #fff;
+	    display: block;
+	    font-size: 13px;
+	    line-height: 35px;
+	    margin-left: 13px;
+	    padding-left: 40px;
+	    cursor: pointer;
+	    position: relative;
+	    clear: both;
+	}
+	.block3 form .agreetosend::after, .block3 form .agreetosend::before {
+	    position: absolute;
+	    display: block;
+	    content: '';
+	}
+	.block3 form .agreetosend::before {
+	    left: 0;
+	    top: 6px;
+	    cursor: pointer;
+	    width: 20px;
+	    height: 20px;
+	    box-sizing: border-box;
+	    border-radius: 2px;
+	    border: 1px solid #fff;
+	}
+	.block3 form .agreetosend::after {
+	    left: 4px;
+	    top: 12px;
+	    opacity: 0;
+	    width: 13px;
+	    height: 8px;
+	    background: url(../images/agree.svg) 50% 50%/13px auto no-repeat;
+	}
 }
 
 
@@ -961,6 +1342,10 @@ li {
 	    margin-left: 1px;
 	    border: 1px solid #fefefe;
 	}
+	.block5 ul li .case .link:hover {
+	    background: #fefefe;
+	    color: #181c1c;
+	}
 	.block5 ul li .case .link::before {
 	    content: '';
 	    display: block;
@@ -972,7 +1357,10 @@ li {
 	    top: 11px;
 	    right: 16px;
 	}
-
+	.block5 ul li .case .link:hover::before {
+	    -webkit-filter: brightness(0);
+	    filter: brightness(0);
+	}
 
 	/*圆点----------*/
 	.block5 .bx-pager {
@@ -1006,7 +1394,7 @@ li {
 /*模块六------------------------*/
 @media (min-width: 1144px) {
 	.block6 {
-	    height: 575px;
+	    height: 375px;
 	    max-width: 100%;
 	    margin: 0 auto;
 	    position: relative;
@@ -1074,3 +1462,90 @@ li {
 	    transform: rotate(0);
 	}
 }
+
+
+/*模块truckfoot--------------*/
+@media (min-width: 1144px) {
+	.truckfoot {
+	    content: '';
+	    background: url(../images/truck2.png) calc(50% + 633px) 50% no-repeat;
+	    height: 632px;
+	    position: absolute;
+	    bottom: -297px;
+	    z-index: -1;
+	    width: 100%;
+	}
+}
+
+
+
+/*footer--------------------------*/
+@media (min-width: 1144px) {
+	footer {
+	    height: 151px;
+	    z-index: -1;
+	    color: #6e6471;
+	}
+	footer .row1, footer .row2 {
+	    position: relative;
+	    z-index: 200;
+	}
+	footer .row2 {
+	    padding-top: 65px;
+	    clear: both;
+	}
+	footer .madein {
+	    margin-right: 126px;
+	}
+	footer .row2 .madein {
+	    margin-top: 8px;
+	    font-weight: 700;
+	    font-size: 18px;
+	}
+	footer .row2 .copy {
+	    margin-top: 8px;
+	    letter-spacing: 2px;
+	    font-size: 15px;
+	}
+	footer .row2 .call {
+	    margin-left: 228px;
+	    width: 400px;
+	}
+	footer .row2 .call .tel {
+	    float: left;
+	    font-weight: 700;
+	    font-size: 18px;
+	    line-height: 32px;
+	}
+	footer .row2 .call .backcall {
+	    margin-left: 30px;
+	    margin-top: 2px;
+	    float: left;
+	    font-weight: 700;
+	    font-size: 15px;
+	    width: 150px;
+	    height: 27px;
+	    border: 1px solid #26a65b;
+	    color: #26a65b;
+	    line-height: 27px;
+	    text-align: center;
+	    border-radius: 3px;
+	    cursor: pointer;
+	}
+	footer .row2 .call .backcall:hover {
+	    background: #26a65b;
+	    color: #fefefe;
+	}
+	footer .row2 .madein span {
+	    color: #26a65b;
+	    font-weight: 700;
+	}
+	footer .row2 .call .tel:hover {
+	    color: #26a65b;
+	    cursor: pointer;
+	}
+	.f {
+	    display: block;
+	}
+}
+
