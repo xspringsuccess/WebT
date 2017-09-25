@@ -31,8 +31,16 @@ address {
 .f,.m,.s {
 	display:none;
 }
-
-
+.small {
+	padding-top: 14px;
+	height: 75px;
+}
+.active {
+	margin: 0 3px;
+	width: 27px;
+	height: 27px;
+	background-color: #26a65b;
+}
 /* header------------------------------------ */
 header nav ul li:hover {
 	color: #26a65b;
@@ -78,7 +86,7 @@ li {
     	display: block;
 	}
 	/*导航上推效果--------------*/
-	header.small {
+	header .small {
 	    padding-top: 14px;
 	    height: 75px;
 	}

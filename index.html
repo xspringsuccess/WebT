@@ -163,7 +163,7 @@
 		<div class="block5">
 			<div class="bx-wrapper" style="max-width: 100%;">
 				<div style="width: 100%; overflow: hidden; position: relative; height: 670px;">
-					<ul style="width: 615%; position: relative; transition-duration: 0.5s; transform: translate3d(-2698px, 0px, 0px);">
+					<ul style="width: 9999px; position: relative; transition-duration: 0.5s; ">
 						<li style="float: left; list-style: none; position: relative; width: 1349px;">
 							<div class="case india">
 								<div class="wrapper">
@@ -223,16 +223,16 @@
 				<div class="bx-controls bx-has-pager">
 					<div class="bx-pager bx-default-pager">
 						<div class="bx-pager-item">
-							<a href="" class="bx-pager-link active"></a>
+							<a class="bx-pager-link active"></a>
 						</div>
 						<div class="bx-pager-item">
-							<a href="" class="bx-pager-link"></a>
+							<a class="bx-pager-link"></a>
 						</div>
 						<div class="bx-pager-item">
-							<a href="" class="bx-pager-link"></a>
+							<a class="bx-pager-link"></a>
 						</div>
 						<div class="bx-pager-item">
-							<a href="" class="bx-pager-link"></a>
+							<a class="bx-pager-link"></a>
 						</div>
 					</div>
 				</div>
@@ -244,7 +244,7 @@
 			</div>
 			<div class="bx-wrapper" style="max-width: 100%; margin: 0px auto;">
 				<div class="bx-viewport" style="width: 100%; overflow: hidden; position: relative; height:150px;">
-					<ul class="bxsliderpartners" style="width: 1115%; position: relative; transition-duration: 0s; transform: translate3d(0px,0px,0px);">
+					<ul class="bxsliderpartners" style="width: 1115%; position: relative; transition-duration: 0s; transform: translate3d(-1349px,0px,0px);">
 						<li style="background: url('./assets/images/shik.svg') 50% 50% / 100px no-repeat; float: left; list-style: none; position: relative; width: 1144px;"></li>
 						<li style="background: url('./assets/images/zuma.svg') 50% 50% / 100px no-repeat; float: left; list-style: none; position: relative; width: 1144px;"></li>
 						<li style="background: url('./assets/images/jif.svg') 50% 50% / 100px no-repeat; float: left; list-style: none; position: relative; width: 1144px;"></li>
@@ -329,7 +329,23 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 
 	<script>
-	
+		$(window).scroll(function() {
+			if($(this).scrollTop() >= 150) {
+				$("header").addClass("small")
+			}else {
+				$("header").removeClass("small")
+			}
+		});
+		$(function(){
+			var num = 0;
+			$('bx-pager-item a').click(function(event){
+				var index = $(this).index();
+				console.log(index);
+				num = index;
+				$(this).addClass('active').siblings().removeClass('active');
+				$('block5 ul').css('transform',translate3d(-1349px));
+			})
+		})
 	</script>
 </body>
 </html>
