@@ -1301,13 +1301,13 @@ li {
 	    height: 670px;
 	}
 	.block5 ul li .india {
-	    background-image: url(../images/card3.jpg);
+	    background-image: url(../images/card1.jpg);
 	}
 	.block5 ul li .zuma {
-	    background-image: url(../images/card2.jpg);
+	    background-image: url(../images/card3.jpg);
 	}
-	.block5 ul li .rise {
-	    background-image: url(../images/card1.jpg);
+	.block5 ul li .rice {
+	    background-image: url(../images/card2.jpg);
 	}
 	.block5 ul li .europe {
 	    background-image: url(../images/card.jpg);
@@ -1396,6 +1396,9 @@ li {
 	    height: 27px;
 	    background-color: #26a65b;
 	}
+	.block5 .bx-pager .bx-pager-item a:hover {
+		cursor: pointer;
+	}
 }
 
 
@@ -1426,7 +1429,7 @@ li {
 	}
 	.block6 .bxsliderpartners li {
 	    height: 150px;
-	    width: 200px!important;
+	    width: 190px!important;
 	    -webkit-filter: grayscale(100%);
 	    filter: grayscale(100%);
 	    -webkit-transition: -webkit-filter .5s ease,filter .5s ease;
@@ -1439,7 +1442,7 @@ li {
 	/*左右箭头-------*/
 	.block6 .bx-controls {
 	    position: absolute;
-	    width: 1260px;
+	    width: 95%;
 	    left: 0;
 	    right: 0;
 	    margin: 0 auto;
@@ -1469,6 +1472,7 @@ li {
 	    -webkit-filter: none;
 	    filter: none;
 	    opacity: 1;
+	    cursor: pointer;
 	}
 	.block6 .bx-controls .bx-controls-direction .bx-next {
 	    float: right;
@@ -1564,12 +1568,7 @@ li {
 }
 
 
-/*
-* @Author: mingming
-* @Date:   2017-07-02 14:16:54
-* @Last Modified by:   mingming
-* @Last Modified time: 2017-07-02 14:19:49
-*/
+
 /* 回到顶部 */
 .top {
 	position: fixed;
@@ -1591,8 +1590,6 @@ li {
 	transition: background-color .8s cubic-bezier(0.316967, 0.989541, 0.310022, 1);
 	background-image: url(../images/goTop.png);
 	background-size: 50px 50px;
-	/*background-repeat: no-repeat;*/
-	/*background-position: -118px 3px;*/
 }
 .top a:hover {
 	-webkit-filter: none;
