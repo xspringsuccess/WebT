@@ -1,5 +1,22 @@
 $(function() {
 	var num = 0;
+	var timer;
+	function move() {
+		timer = setInterval(function() {
+			num++;
+			if(num>3) {
+				num=0;
+			}
+			console.log(num);
+			var page = -1349*num+'px'
+			$('.bx-pager-link').removeClass('active');
+			$('.bx-pager-link').eq(num).addClass('active').siblings().removeClass('active');
+			$('.block5 ul').css('transform',"translate3d("
+				+page+",0px,0px")
+		},5000)
+	}
+	move();
+	
 	$('.bx-next').click(function() {
 		++num;
 		if(num>3) {
