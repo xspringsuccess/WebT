@@ -8,6 +8,7 @@
 	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
 	<!-- <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
 	<link rel="stylesheet" href="assets/styles/index.css">
+	
 </head>
 <body>
 	<!-- 头部 -->
@@ -258,8 +259,8 @@
 				</div>
 				<div class="bx-controls bx-has-controls-direction">
 					<div class="bx-controls-direction">
-						<a href class="bx-prev">prev</a>
-						<a href class="bx-next"></a>
+						<div class="bx-prev" >prev</div>
+						<div class="bx-next" ></div>
 					</div>
 				</div>
 			</div>
@@ -315,7 +316,10 @@
 			</div>
 		</div>
 	</footer>
-
+	
+	<div class="top">
+		<a href=""></a>
+	</div>
 
 
 
@@ -326,25 +330,26 @@
 	
 	<!-- 引进JQ文件 -->
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="assets/js/index.js"></script>
+	<script src="assets/js/goTop.js"></script>
+
+
+
+
 
 	<script>
-		$(window).scroll(function() {
-			if($(this).scrollTop() >= 150) {
-				$("header").addClass("small")
-			}else {
-				$("header").removeClass("small")
-			}
-		});
-		$(function(){
-			var num = 0;
-			$('block5 bx-pager bx-pager-item a').click(function(event){
-				var index = $(this).index();
-				console.log(index);
-				num = index;
-				$(this).addClass('active').siblings().removeClass('active');
-				$('block5 ul').css('transform',translate3d(-1349*index+'px'));
-			})
-		})
+		
+		// $(function(){
+		// 	var num = 0;
+		// 	$('block5 bx-pager bx-pager-item a').click(function(event){
+		// 		var index = $(this).index();
+		// 		console.log(index);
+		// 		num = index;
+		// 		$(this).addClass('active').siblings().removeClass('active');
+		// 		$('block5 ul').css('transform',translate3d(-1349*index+'px'));
+		// 	})
+		// })
+		
 	</script>
 </body>
 </html>
