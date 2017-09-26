@@ -1281,11 +1281,12 @@ li {
 	.block3 form .agreetosend::after {
 	    left: 4px;
 	    top: 12px;
-	    opacity: 0;
+	    opacity: 1;
 	    width: 13px;
 	    height: 8px;
 	    background: url(../images/agree.svg) 50% 50%/13px auto no-repeat;
 	}
+	
 }
 
 

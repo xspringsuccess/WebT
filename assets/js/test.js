@@ -38,4 +38,6 @@ $(function() {
 		$('.block5 ul').css('transform',"translate3d("
 			+page+",0px,0px")
 	})
+
+	
 })
