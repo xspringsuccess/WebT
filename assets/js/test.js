@@ -1,6 +1,8 @@
 $(function() {
 	var num = 0;
 	var timer;
+	var b = false;
+	// 图片轮播
 	function move() {
 		timer = setInterval(function() {
 			num++;
@@ -17,6 +19,7 @@ $(function() {
 	}
 	move();
 	
+	// partner下一张
 	$('.bx-next').click(function() {
 		++num;
 		if(num>3) {
@@ -30,6 +33,7 @@ $(function() {
 		}
 	});
 
+	// partner上一张
 	$('.bx-prev').click(function() {
 		--num;
 		if(num<0) {
@@ -45,8 +49,8 @@ $(function() {
 		}
 	});
 
+	// 轮播点击更换图片
 	$('.bx-pager-item').click(function() {
-		
 		var index = $(this).index();
 		// console.log(index);
 		var page = -1349*index+'px'
@@ -56,5 +60,18 @@ $(function() {
 			+page+",0px,0px")
 	})
 
-	
+	// 移动端点击出现导航条
+	$('.menu').click(function() {
+		if(!b) {
+			$('.fullmenu').css('display',"block");
+			$('.fullmenu .call').css('display',"block");
+			console.log(b);
+			b = true;
+		}else {
+			$('.fullmenu').css('display',"none");
+			$('.fullmenu .call').css('display',"none");
+			console.log(b);
+			b = false;
+		}
+	})
 })

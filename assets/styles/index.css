@@ -31,10 +31,7 @@ address {
 .f,.m,.s {
 	display:none;
 }
-.small {
-	padding-top: 14px;
-	height: 75px;
-}
+
 .active {
 	margin: 0 3px;
 	width: 27px;
@@ -85,7 +82,7 @@ li {
     	display: block;
 	}
 	/*导航上推效果--------------*/
-	header .small {
+	.small {
 	    padding-top: 14px;
 	    height: 75px;
 	}
@@ -226,8 +223,8 @@ li {
 }
 @media (max-width: 767px) {
 	header {
-	    /*-webkit-transition: .5s height ease,.5s padding-top ease;
-	    transition: .5s height ease,.5s padding-top ease;*/
+	    -webkit-transition: .5s height ease,.5s padding-top ease;
+	    transition: .5s height ease,.5s padding-top ease;
 	    position: fixed;
 	    background: #fff;
 	    z-index: 211;
@@ -240,15 +237,14 @@ li {
 	    height: 42px;
 	}
 	/*把header向中间挤*/
-	.wrapper {
+	header .wrapper {
 		width: 90%;
 	}
 	header .logo {
-	    padding-left: 4px;
-	    width: 175px;
+	    width: 155px;
 	    font-size: 9px;
 	    letter-spacing: .8px;
-	    margin-left: 100px;
+	    margin-left: 80px;
 	}
 	header .logo img {
 	    height: 10px;
@@ -259,25 +255,29 @@ li {
 		/*移动端右侧展开导航栏*/
 	header nav .menu {
 	    padding-left: 20px;
-	    width: 74px;
+	    width: 54px;
+	    right: 30px;
 	    float: right;
 	    font-size: 14px;
 	    letter-spacing: 1px;
 	    cursor: pointer;
-	    /*-webkit-transition: color .2s ease;
-	    transition: color .2s ease;*/
+	    -webkit-transition: color .2s ease;
+	    transition: color .2s ease;
 	}
-	.s {
+	.menu {
+		display: block;
+	}
+	.fullmenu, .fullmenu .call {
 		display: none;
 	}
-	header nav .menu .hamburger {
+  /*header nav .menu .hamburger {
 	    width: 15px;
 	    float: left;
 	    margin-right: 8px;
 	    margin-top: 3px;
 	    position: relative;
 	    height: 10px;
-	}
+	}*/
 	/*移动导航列*/
 	.fullmenu, .popup {
 	    position: fixed;
@@ -358,8 +358,9 @@ li {
     	margin-left: 20px;
     	float: left;
 	}
-	header .wrapper {
-		width: 90%;
+	.small {
+		padding-top: 14px;
+		height: 32px;
 	}
 }
 
