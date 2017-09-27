@@ -41,7 +41,7 @@ address {
 	height: 27px;
 	background-color: #26a65b;
 }
-/* header------------------------------------ */
+/*------------------header------------------------- */
 header nav ul li:hover {
 	color: #26a65b;
 }
@@ -69,8 +69,7 @@ li {
    	display: list-item;
    	text-align: -webkit-match-parent;
 }
-
-
+/*----------------header-------------------*/
 @media (min-width: 1144px) {
 	header {
 	    -webkit-transition: .5s height ease,.5s padding-top ease;
@@ -148,8 +147,6 @@ li {
 		color:#fefefe
 	}
 }
-
-
 @media (max-width: 1143px) and (min-width: 768px) {
 	header {
 	    -webkit-transition: .5s height ease,.5s padding-top ease;
@@ -227,7 +224,6 @@ li {
 		color:#fefefe
 	}
 }
-
 @media (max-width: 767px) {
 	header {
 	    /*-webkit-transition: .5s height ease,.5s padding-top ease;
@@ -272,7 +268,7 @@ li {
 	    transition: color .2s ease;*/
 	}
 	.s {
-		display: block;
+		display: none;
 	}
 	header nav .menu .hamburger {
 	    width: 15px;
@@ -341,10 +337,8 @@ li {
 	footer, header {
 	    overflow: hidden;
 	    min-width: 320px;
-	}
-	
+	}	
 }
-
 @media (max-width: 767px) and (orientation: landscape) {
 	.fullmenu ul {
 	    padding-top: 80px!important;
@@ -364,14 +358,17 @@ li {
     	margin-left: 20px;
     	float: left;
 	}
+	header .wrapper {
+		width: 90%;
+	}
 }
 
-/*--------------------------------------------------主体---------------------------------------*/
+/*-------------------1144主体------------------------*/
 
-/*动画----------------------*/
-@media (max-height: 844px) and (min-width: 1144px) {
+/*--------动画---------*/
+@media (min-width: 1144px) and (max-height: 844px) {
 	/*动画背景透明度--------------*/
-/*	main .block1 .wrapper .animation {
+  /*main .block1 .wrapper .animation {
 	    -webkit-filter: brightness(70%);
 	    filter: brightness(70%);
 	}*/
@@ -640,8 +637,8 @@ li {
 		}
 	}
 }
-/*模块一-------------------------------------------------*/
-@media (max-height: 844px) and (min-width: 1144px) {
+/*模块一---------------------------------------------*/
+@media (min-width: 1144px) and (max-height: 844px) {
 	main .block1 {
 	    height: 873px;
 	}
@@ -677,7 +674,7 @@ li {
     	z-index: 10;	
 	}
 }
-/*按钮------------------------------*/
+/*--------按钮------------*/
 @media (min-width: 1144px) {
 	.block1 {
 	    margin-top: 111px;
@@ -706,12 +703,556 @@ li {
 	    font-weight: 700;
 	}
 }
+/*模块二------------------------*/
+@media (min-width: 1144px) {
+	.block2 {
+	    overflow: hidden;
+	    height: 759px;
+	}
+	.block2 .text {
+	    float: left;
+	}
+	.block2 .text h2 {
+	    padding-top: 123px;
+	    color: #26a65b;
+	    font-weight: 700;
+	    letter-spacing: 5px;
+	    font-size: 45px;
+	    margin-left: 2px;
+	    margin-bottom: 76px;
+	}
+	.block2 .text p {
+	    width: 310px;
+	    color: #231f20;
+	    font-size: 18px;
+	    line-height: 28px;
+	    margin-bottom: 28px;
+	}
+	/*右---------*/
+	.block2 .blocks {
+	    float: right;
+	    width: 694px;
+	    padding-top: 95px;
+	}
+	.block2 .blocks div[class^=service] {
+	    float: left;
+	    margin: 0 0 59px 51px;
+	    padding-left: 10px;
+	    width: 170px;
+	    height: 50px;
+	    padding-top: 155px;
+	    color: #181c1c;
+	    font-size: 20px;
+	}
+	.block2 .blocks .service1 {
+	    background: url(../images/ship.svg) 10px 34px no-repeat;
+	    background-size: 87px auto;
+	}
+	.block2 .blocks .service2 {
+	    background: url(../images/doc.svg) 12px 33px no-repeat;
+	    background-size: 72px auto;
+	}
+	.block2 .blocks .service3 {
+	    background: url(../images/docs.svg) 10px 33px no-repeat;
+	    background-size: 61px auto;
+	}
+	.block2 .blocks .service4 {
+	    background: url(../images/import.svg) 13px 7px no-repeat;
+	    background-size: 109px auto;
+	}
+	.block2 .blocks .service5 {
+	    background: url(../images/export.svg) 20px 24px no-repeat;
+	    background-size: 82px auto;
+	}
+	.block2 .blocks .service6 {
+	    background: url(../images/audit.svg) 1px 26px no-repeat;
+	    background-size: 68px auto;
+	}
+	/*图片底下文字-------*/
+	.block2 .blocks div[class^=service] span {
+	    font-weight: 700;
+	    border-bottom: 1px solid #181c1c;
+	    padding-bottom: 5px;
+	    line-height: 33px;
+	}
+	/*右下----------*/
+	.block2 .blocks .wecandomore {
+	    width: 250px;
+	    height: 30px;
+	    color: #26a65b;
+	    border-radius: 3px;
+	    cursor: pointer;
+	    position: relative;
+	    padding-right: 26px;
+	    clear: both;
+	    text-align: center;
+	    line-height: 32px;
+	    font-size: 15px;
+	    margin-left: 51px;
+	    border: 1px solid #26a65b;
+	}
+	.block2 .blocks .wecandomore:hover {
+		background:#26a65b;
+		color:#fefefe;
+	}
+	.block2 .blocks .wecandomore::before {
+	    content: '';
+	    display: block;
+	    background: url(../images/arrow.svg) 50% 50% no-repeat;
+	    background-size: 6px auto;
+	    position: absolute;
+	    width: 6px;
+	    height: 10px;
+	    top: 11px;
+	    right: 16px;
+	}
+	.block2 .blocks .wecandomore:hover::before {
+	    -webkit-filter: brightness(100);
+	    filter: brightness(100);
+	}
+}
+/*模块三-----------------*/
+@media (min-width: 1144px) {
+	/*动画----------------*/
+	.block3 .boat {
+	    z-index: 0;
+	    width: 793px;
+	    height: 520px;
+	    position: absolute;
+	    background: url(../images/bigship2.png) 50% 50% no-repeat;
+	    top: -640px;
+	    right: -990px;
+	}
+	.block3 .boat.animate {
+	    will-change: transform;
+	    -webkit-animation: formboat 35s linear infinite;
+	    animation: formboat 35s linear infinite;
+	    -webkit-animation-delay: -4s;
+	    animation-delay: -4s;
+	}
+	@keyframes formboat {
+		0% {
+		    -webkit-transform: translate(0,0);
+		    transform: translate(0,0);
+		}
+		100% {
+		    -webkit-transform: translate(-1720px,1200px);
+		    transform: translate(-1720px,1200px);
+		}
+	}
+	.block3 {
+	    background: #5dbfc0;
+	    padding-top: 118px;
+	    height: 507px;
+	    overflow: hidden;
+	    position: relative;
+	}
+	.block3 h2 {
+	    color: #fefefe;
+	    letter-spacing: 6px;
+	    font-weight: 700;
+	    font-size: 49px;
+	    margin-bottom: 71px;
+	}
+	.f {
+	    display: block;
+	}
+	.block3 form {
+	    position: relative;
+	    z-index: 1;
+	    margin-left: -12px;
+	}
+	.block3 form input[type=text] {
+	    width: 275px;
+	    height: 48px;
+	    padding-top: 8px;
+	    border: 1px solid #fefefe;
+	    border-radius: 3px;
+	}
+	.block3 form input[type=text], .block3 form textarea {
+	    font-size: 20px;
+	    margin: 0 13px 36px;
+	    padding-left: 20px;
+	    background: 0 0;
+	    color: #fefefe;
+	    float: left;
+	}
+	.block3 form input::-webkit-input-placeholder, .block3 form textarea::-webkit-input-placeholder {
+		color: #fff;
+		opacity: 1;
+	}
+	.block3 form textarea {
+	    width: 598px;
+	    height: 38px;
+	    padding-top: 18px;
+	    border: 1px solid #fefefe;
+	    border-radius: 3px;
+	    resize: none;
+	}
+	.block3 form input[type=submit] {
+	    width: 297px;
+	    border: none;
+	    height: 58px;
+	    background: #26a65b;
+	    color: #fefefe;
+	    font-weight: 700;
+	    text-align: center;
+	    line-height: 58px;
+	    border-radius: 3px;
+	    letter-spacing: 3px;
+	    margin-left: 13px;
+	    cursor: pointer;
+	    font-size: 24px;
+	}
+	.block3 form input[type=checkbox] {
+	    display: none;
+	}
+	.block3 form .agreetosend {
+	    color: #fff;
+	    display: block;
+	    font-size: 13px;
+	    line-height: 35px;
+	    margin-left: 13px;
+	    padding-left: 40px;
+	    cursor: pointer;
+	    position: relative;
+	    clear: both;
+	}
+	.block3 form .agreetosend::after, .block3 form .agreetosend::before {
+	    position: absolute;
+	    display: block;
+	    content: '';
+	}
+	.block3 form .agreetosend::before {
+	    left: 0;
+	    top: 6px;
+	    cursor: pointer;
+	    width: 20px;
+	    height: 20px;
+	    box-sizing: border-box;
+	    border-radius: 2px;
+	    border: 1px solid #fff;
+	}
+	.block3 form .agreetosend::after {
+	    left: 4px;
+	    top: 12px;
+	    opacity: 1;
+	    width: 13px;
+	    height: 8px;
+	    background: url(../images/agree.svg) 50% 50%/13px auto no-repeat;
+	}	
+}
+/*模块五-----------------------*/
+@media (min-width: 1144px) {
+	.block5 {
+	    position: relative;
+	    height: 640px;
+	}
+	.block5 ul, .block5 ul li {
+	    height: 670px;
+	}
+	.block5 ul li .india {
+	    background-image: url(../images/card1.jpg);
+	}
+	.block5 ul li .zuma {
+	    background-image: url(../images/card3.jpg);
+	}
+	.block5 ul li .rice {
+	    background-image: url(../images/card2.jpg);
+	}
+	.block5 ul li .europe {
+	    background-image: url(../images/card.jpg);
+	}
+	.block5 ul li .case {
+	    height: 670px;
+	    color: #fefefe;
+	    width: 100%;
+	    box-sizing: border-box;
+	    padding-top: 139px;
+	    background-size: cover;
+	    background-repeat: no-repeat;
+	    background-position: 50% 50%;
+	}
+	.block5 ul li .case h2 {
+	    font-weight: 700;
+	    line-height: 59px;
+	    font-size: 54px;
+	    width: 648px;
+	    margin-bottom: 67px;
+	}
+	.block5 ul li .case p {
+	    width: 480px;
+	    line-height: 28px;
+	    font-size: 18px;
+	    margin-bottom: 48px;
+	}
+	.block5 ul li .case .link {
+	    width: 110px;
+	    height: 30px;
+	    color: #fefefe;
+	    border-radius: 3px;
+	    cursor: pointer;
+	    position: relative;
+	    padding-right: 26px;
+	    clear: both;
+	    text-align: center;
+	    line-height: 32px;
+	    font-size: 15px;
+	    margin-left: 1px;
+	    border: 1px solid #fefefe;
+	}
+	.block5 ul li .case .link:hover {
+	    background: #fefefe;
+	    color: #181c1c;
+	}
+	.block5 ul li .case .link::before {
+	    content: '';
+	    display: block;
+	    background: url(../images/arrowwhite.svg) 50% 50% no-repeat;
+	    background-size: 6px auto;
+	    position: absolute;
+	    width: 6px;
+	    height: 10px;
+	    top: 11px;
+	    right: 16px;
+	}
+	.block5 ul li .case .link:hover::before {
+	    -webkit-filter: brightness(0);
+	    filter: brightness(0);
+	}
 
-/*---------小屏模式下--------*/
+	/*圆点----------*/
+	.block5 .bx-pager {
+	    position: absolute;
+	    top: 537px;
+	    margin: 0 auto;
+	    left: 0;
+	    right: 948px;
+	    width: 200px;
+	}
+	.block5 .bx-pager .bx-pager-item a {
+	    display: block;
+	    float: left;
+	    height: 15px;
+	    text-indent: 100%;
+	    overflow: hidden;
+	    width: 15px;
+	    border-radius: 50%;
+	    margin: 6px 9px;
+	    background-color: #fefefe;
+	}
+	.block5 .bx-pager .bx-pager-item a.active {
+	    margin: 0 3px;
+	    width: 27px;
+	    height: 27px;
+	    background-color: #26a65b;
+	}
+	.block5 .bx-pager .bx-pager-item a:hover {
+		cursor: pointer;
+	}
+}
+/*模块六------------------------*/
+@media (min-width: 1144px) {
+	.block6 {
+	    height: 475px;
+	    max-width: 100%;
+	    margin: 0 auto;
+	    position: relative;
+	}
+	.block6 h2 {
+	    padding-top: 116px;
+	    margin-bottom: 60px;
+	    margin-left: -3px;
+	    color: #26a65b;
+	    font-size: 66px;
+	    letter-spacing: 7px;
+	    font-weight: 700;
+	}
+	.block6 .bx-viewport {
+	    margin: 0 auto;
+	    width: 1144px!important;
+	    z-index: 10;
+	}
+	.block6 .bxsliderpartners {
+	    height: 150px;
+	}
+	.block6 .bxsliderpartners li {
+	    height: 150px;
+	    width: 190px!important;
+	    -webkit-filter: grayscale(100%);
+	    filter: grayscale(100%);
+	    -webkit-transition: -webkit-filter .5s ease,filter .5s ease;
+	    transition: filter .5s ease;
+	}
+	.block6 .bxsliderpartners li:hover {
+	    -webkit-filter: none;
+	    filter: none;
+	}
+	/*左右箭头-------*/
+	.block6 .bx-controls {
+	    position: absolute;
+	    width: 95%;
+	    left: 0;
+	    right: 0;
+	    margin: 0 auto;
+	    z-index: 0;
+	    top: 315px;
+	}
+	.block6 .bx-controls .bx-controls-direction .bx-next, 
+	.block6 .bx-controls .bx-controls-direction .bx-prev {
+	    float: left;
+	    display: block;
+	    text-indent: 100%;
+	    overflow: hidden;
+	    white-space: nowrap;
+	    width: 17px;
+	    z-index: 90;
+	    height: 29px;
+	    background: url(../images/arrow.svg) 50% 50% no-repeat;
+	    background-size: 17px auto;
+	    -webkit-filter: grayscale(100%);
+	    filter: grayscale(100%);
+	    opacity: .5;
+	    -webkit-transform: rotate(180deg);
+	    transform: rotate(180deg);
+	}
+	.block6 .bx-controls .bx-controls-direction .bx-next:hover, 
+	.block6 .bx-controls .bx-controls-direction .bx-prev:hover {
+	    -webkit-filter: none;
+	    filter: none;
+	    opacity: 1;
+	    cursor: pointer;
+	}
+	.block6 .bx-controls .bx-controls-direction .bx-next {
+	    float: right;
+	    -webkit-transform: rotate(0);
+	    transform: rotate(0);
+	}
+}
+/*模块truckfoot--------------*/
+@media (min-width: 1144px) {
+	.truckfoot {
+	    content: '';
+	    background: url(../images/truck2.png) calc(50% + 633px) 50% no-repeat;
+	    height: 632px;
+	    position: absolute;
+	    bottom: -297px;
+	    z-index: -1;
+	    width: 100%;
+	}
+}
+/*footer--------------------------*/
+@media (min-width: 1144px) {
+	footer {
+	    height: 151px;
+	    z-index: -1;
+	    color: #6e6471;
+	}
+	footer .row1, footer .row2 {
+	    position: relative;
+	    z-index: 200;
+	}
+	footer .row2 {
+	    padding-top: 65px;
+	    clear: both;
+	}
+	footer .madein {
+	    margin-right: 126px;
+	}
+	footer .row2 .madein {
+	    margin-top: 8px;
+	    font-weight: 700;
+	    font-size: 18px;
+	}
+	footer .row2 .copy {
+	    margin-top: 8px;
+	    letter-spacing: 2px;
+	    font-size: 15px;
+	}
+	footer .row2 .call {
+	    margin-left: 228px;
+	    width: 400px;
+	}
+	footer .row2 .call .tel {
+	    float: left;
+	    font-weight: 700;
+	    font-size: 18px;
+	    line-height: 32px;
+	}
+	footer .row2 .call .backcall {
+	    margin-left: 30px;
+	    margin-top: 2px;
+	    float: left;
+	    font-weight: 700;
+	    font-size: 15px;
+	    width: 150px;
+	    height: 27px;
+	    border: 1px solid #26a65b;
+	    color: #26a65b;
+	    line-height: 27px;
+	    text-align: center;
+	    border-radius: 3px;
+	    cursor: pointer;
+	}
+	footer .row2 .call .backcall:hover {
+	    background: #26a65b;
+	    color: #fefefe;
+	}
+	footer .row2 .madein span {
+	    color: #26a65b;
+	    font-weight: 700;
+	}
+	footer .row2 .call .tel:hover {
+	    color: #26a65b;
+	    cursor: pointer;
+	}
+	.f {
+	    display: block;
+	}
+}
+/* 回到顶部 */
+@media (min-width: 767px) {
+	.top {
+		position: fixed;
+		height: 50px;
+		width: 50px;
+		bottom: -50px;
+		right: 50px;
+	}
+	.top a {
+		width: 100%;
+		height: 100%;
+		display: block;
+		border-radius: 50%;
+		background-color: rgba(0, 0, 0, .3);
+		-webkit-filter: opacity(.5);
+		filter: opacity(.5);
+		-webkit-transition: background-color .8s cubic-bezier(0.316967, 0.989541, 0.310022, 1);
+		-moz-transition: background-color .8s cubic-bezier(0.316967, 0.989541, 0.310022, 1);
+		transition: background-color .8s cubic-bezier(0.316967, 0.989541, 0.310022, 1);
+		background-image: url(../images/goTop.png);
+		background-size: 50px 50px;
+	}
+	.top a:hover {
+		-webkit-filter: none;
+		filter: none;
+		-webkit-transition: -webkit-filter .5s ease,filter .5s ease;
+		transition: filter .5s ease;
+	}
 
+	/* 回到顶部 */
+}
+
+
+
+
+/*----------------------768主体-----------------------*/
+
+/*模块一-----------------------------------------*/
+/*-------按钮----------*/
 @media (max-width: 1143px) and (min-width: 768px) {
 	/*阴影*/
-/*	main .block1 .wrapper .animation {
+  /*main .block1 .wrapper .animation {
 	    -webkit-filter: brightness(70%);
 	    filter: brightness(70%);
 	}*/
@@ -1045,81 +1586,429 @@ li {
 
 
 
-/*模块二------------------------*/
-@media (min-width: 1144px) {
-	.block2 {
-	    overflow: hidden;
-	    height: 759px;
+
+
+/*----------------------767主体-----------------------*/
+
+/*---------动画---------------*/
+@media (max-width: 767px) {
+	.block1 .boat {
+	    will-change: transform;
+	    position: absolute;
+	    width: 793px;
+	    height: 520px;
+	    right: 0;
+	    top: 20px;
+	    background: url(../images/bigship2.png) 50% 50% no-repeat;
+	    background-size: 317px auto;
+	    margin-top: -270px;
+	    z-index: 1;
+	    -webkit-animation: firstboats 61.11111111s ease infinite;
+	    animation: firstboats 61.11111111s ease infinite;
 	}
-	.block2 .text {
-	    float: left;
+	@keyframes firstboats {
+		0% {
+		    -webkit-transform: translate(842px,-106px);
+		    transform: translate(842px,-106px);
+		}
+		40%, 60% {
+		    -webkit-transform: translate(284px,212px);
+		    transform: translate(284px,212px);
+		}
+		100% {
+		    -webkit-transform: translate(-274px,530px);
+		    transform: translate(-274px,530px);
+		}
+	}
+	.block1 .crane1, .block1 .crane2, .block1 div[class^=car] {
+	    position: absolute;
+	    top: 0;
+	    will-change: transform;
+	}
+	.block1 div[class^=car] {
+	    left: -163px;
+	}
+	.block1 .crane1, .block1 .crane2 {
+	    width: 475px;
+	    height: 379px;
+	    left: 0;
+	}
+	.block1 div.car2, .block1 div.car4 {
+	    width: 26px;
+	    z-index: 1;
+	    margin-left: -13px;
+	    margin-top: -9px;
+	}
+	.block1 div.car6, .block1 div.car7 {
+	    -webkit-animation: cartoleft 12.5s linear infinite;
+	    z-index: 1;
+	}
+	.block1 div.car10, .block1 div.car9 {
+	    width: 26px;
+	    height: 18px;
+	    margin-left: -13px;
+	    margin-top: -9px;
+	    -webkit-animation: cartoleft2 7.14285714s linear infinite;
+	    z-index: 2;
+	    left: -180px;
+	}
+	.block1 .crane1 {
+	    background: url(../images/crane.png) 50% 50% no-repeat;
+	    background-size: 190px auto;
+	    z-index: 3;
+	    -webkit-animation: crane1s 30.55555556s linear infinite alternate;
+	    animation: crane1s 30.55555556s linear infinite alternate;
+	}
+	@keyframes crane1s {
+		0% {
+		    -webkit-transform: translate(-201.92px,-38.32px);
+		    transform: translate(-201.92px,-38.32px);
+		}
+		49% {
+		    -webkit-transform: translate(-324.56px,32.24px);
+		    transform: translate(-324.56px,32.24px);
+		}
+		100%, 90% {
+		    -webkit-transform: translate(-222.36px,-26.56px);
+		    transform: translate(-222.36px,-26.56px);
+		}
+	}
+	.block1 .crane2 {
+	    background: url(../images/crane.png) 50% 50% no-repeat;
+	    background-size: 190px auto;
+	    z-index: 2;
+	    -webkit-animation: crane2s 30.55555556s linear infinite alternate;
+	    animation: crane2s 30.55555556s linear infinite alternate;
+	}
+	@keyframes crane2s {
+		0% {
+		    -webkit-transform: translate(-120.16px,-85.36px);
+		    transform: translate(-120.16px,-85.36px);
+		}
+		36% {
+		    -webkit-transform: translate(-38.4px,-132.4px);
+		    transform: translate(-38.4px,-132.4px);
+		}
+		100%, 90% {
+		    -webkit-transform: translate(-161.04px,-61.84px);
+		    transform: translate(-161.04px,-61.84px);
+		}
+	}
+	.block1 div.car1 {
+	    width: 24px;
+	    height: 16px;
+	    background: url(../images/car1.png) 50% 50% no-repeat;
+	    background-size: 10px auto;
+	    z-index: 1;
+	    left: -200px;
+	    margin-left: -12px;
+	    margin-top: -8px;
+	    animation: cartotop 6.25s linear infinite;
+	    -webkit-animation-delay: -.4s;
+	    animation-delay: -.4s;
+	}
+	.block1 div.car2 {
+	    height: 17px;
+	    background: url(../images/car2.png) 50% 50% no-repeat;
+	    background-size: 10px auto;
+	    left: -200px;
+	    animation: cartotop 6.25s linear infinite;
+	    -webkit-animation-delay: 0s;
+	    animation-delay: 0s;
+	}
+	.block1 div.car11 {
+	    width: 24px;
+	    height: 16px;
+	    background: url(../images/car1.png) 50% 50% no-repeat;
+	    background-size: 10px auto;
+	    z-index: 1;
+	    left: -200px;
+	    margin-left: -12px;
+	    margin-top: -8px;
+	    -webkit-transform: translateY(-100px);
+	    transform: translateY(-100px);
+	    -webkit-animation: cartotop 6.25s linear infinite;
+	    animation: cartotop 6.25s linear infinite;
+	    -webkit-animation-delay: 3s;
+	    animation-delay: 3s;
+	}
+	@keyframes cartotop {
+		0% {
+		    -webkit-transform: translate(-430px,356px);
+		    transform: translate(-430px,356px);
+		}
+		100% {
+		    -webkit-transform: translate(220px,-20px);
+		    transform: translate(220px,-20px);
+		}
+	}
+	.block1 div.car3 {
+	    width: 29px;
+	    height: 20px;
+	    background: url(../images/car3.png) 50% 50% no-repeat;
+	    background-size: 12px auto;
+	    z-index: 1;
+	    margin-left: -15px;
+	    margin-top: -10px;
+	    -webkit-animation: cartoleft 12.5s linear infinite;
+	    animation: cartoleft 12.5s linear infinite;
+	    -webkit-animation-delay: -4s;
+	    animation-delay: -4s;
+	}
+	.block1 div.car4 {
+	    height: 18px;
+	    background: url(../images/car4.png) 50% 50% no-repeat;
+	    background-size: 10px auto;
+	    -webkit-animation: cartoleft 12.5s linear infinite;
+	    animation: cartoleft 12.5s linear infinite;
+	    -webkit-animation-delay: -3.2s;
+	    animation-delay: -3.2s;
+	}
+	.block1 div.car6 {
+	    width: 58px;
+	    height: 35px;
+	    background: url(../images/car6.png) 50% 50% no-repeat;
+	    background-size: 23px auto;
+	    margin-left: -29px;
+	    margin-top: -18px;
+	    animation: cartoleft 12.5s linear infinite;
+	    -webkit-animation-delay: -1.6s;
+	    animation-delay: -1.6s;
+	}
+	.block1 div.car7 {
+	    width: 26px;
+	    height: 18px;
+	    background: url(../images/car7.png) 50% 50% no-repeat;
+	    background-size: 10px auto;
+	    margin-left: -13px;
+	    margin-top: -9px;
+	    animation: cartoleft 12.5s linear infinite;
+	    -webkit-animation-delay: -.8s;
+	    animation-delay: -.8s;
+	}
+	.block1 div.car8 {
+	    width: 59px;
+	    height: 40px;
+	    background: url(../images/car8.png) 50% 50% no-repeat;
+	    background-size: 24px auto;
+	    z-index: 1;
+	    margin-left: -30px;
+	    margin-top: -20px;
+	    -webkit-transform: translateY(-100px);
+	    transform: translateY(-100px);
+	    -webkit-animation: cartoleft 12.5s linear infinite;
+	    animation: cartoleft 12.5s linear infinite;
+	    -webkit-animation-delay: .8s;
+	    animation-delay: .8s;
+	}
+	@keyframes cartoleft {
+		0% {
+		    -webkit-transform: translate(160px,-20px);
+		    transform: translate(160px,-20px);
+		}
+		100% {
+		    -webkit-transform: translate(-490px,356px);
+		    transform: translate(-490px,356px);
+		}
+	}
+	.block1 div.car5 {
+	    z-index: 2;
+	    width: 39px;
+	    height: 24px;
+	    background: url(../images/car5.png) 50% 50% no-repeat;
+	    background-size: 16px auto;
+	    left: -180px;
+	    margin-left: -20px;
+	    margin-top: -12px;
+	    -webkit-animation: cartoleft2 7.14285714s linear infinite;
+	    animation: cartoleft2 7.14285714s linear infinite;
+	    -webkit-animation-delay: -1.6s;
+	    animation-delay: -1.6s;
+	}
+	.block1 div.car10, .block1 div.car9 {
+	    width: 26px;
+	    height: 18px;
+	    margin-left: -13px;
+	    margin-top: -9px;
+	    -webkit-animation: cartoleft2 7.14285714s linear infinite;
+	    z-index: 2;
+	    left: -180px;
+	}
+	.block1 div.car9 {
+	    background: url(../images/car7.png) 50% 50% no-repeat;
+	    background-size: 10px auto;
+	    animation: cartoleft2 7.14285714s linear infinite;
+	    -webkit-animation-delay: -4s;
+	    animation-delay: -4s;
+	}
+	.block1 div.car10 {
+	    background: url(../images/car4.png) 50% 50% no-repeat;
+	    background-size: 10px auto;
+	    animation: cartoleft2 7.14285714s linear infinite;
+	    -webkit-animation-delay: -3.2s;
+	    animation-delay: -3.2s;
+	}
+	@keyframes cartoleft2 {
+		0% {
+		    -webkit-transform: translate(186px,-20px);
+		    transform: translate(186px,-20px);
+		}
+		styles.css:1
+		100% {
+		    -webkit-transform: translate(-464px,356px);
+		    transform: translate(-464px,356px);
+		}
+	}
+	.block1 div.car12 {
+	    width: 168px;
+	    height: 103px;
+	    background: url(../images/trucks.png) 50% 50% no-repeat;
+	    background-size: 67px auto;
+	    z-index: 1;
+	    left: 93px;
+	    top: 91px;
+	    margin-left: -84px;
+	    margin-top: -52px;
+	    -webkit-transform: translate(0,0);
+	    transform: translate(0,0);
+	    -webkit-animation: trucks 12.5s ease-in forwards;
+	    animation: trucks 12.5s ease-in forwards;
+	    -webkit-animation-delay: 5s;
+	    animation-delay: 5s;
+	}
+	@keyframes trucks {
+		0% {
+		    -webkit-transform: translate(0,0);
+		    transform: translate(0,0);
+		}
+		100% {
+		    -webkit-transform: translate(-1300px,752px);
+		    transform: translate(-1300px,752px);
+		}
+	}
+}
+/*模块一-----------------------*/
+@media (max-width: 767px) {
+	footer, header, main {
+	    min-width: 320px;
+	}
+	footer, header {
+	    overflow: hidden;
+	}
+	.block1, .block2, .block3, .block4, .block6 {
+	    overflow: hidden;
+	}
+	.block1 {
+	    margin-top: 56px;
+	    height: 528px;
+	    color: #fefefe;
+	    background: url(../images/back1.jpg) 50% 0 no-repeat #5dbfc0;
+	    background-size: 767px auto;
+	}
+	.wrapper {
+	    width: 280px;
+	}
+	.block1 .wrapper {
+	    position: relative;
+	}
+	.block1 h1 {
+	    padding-top: 315px;
+	    font-weight: 700;
+	    letter-spacing: 2px;
+	    line-height: 29px;
+	    text-align: right;
+	    font-size: 26px;
+	    margin-bottom: 15px;
+	    position: relative;
+	    z-index: 10;
+	}
+	.block1 .requestadvise {
+	    width: 210px;
+	    height: 35px;
+	    border-radius: 3px;
+	    text-align: center;
+	    line-height: 37px;
+	    font-size: 13px;
+	    float: right;
+	    cursor: pointer;
+	    background: #26a65b;
+	}
+	.block1 .requestadvise, .block1 h2 {
+	    letter-spacing: 1px;
+	    position: relative;
+	    z-index: 10;
+	    font-weight: 700;
+	}
+}
+/*模块二-----------------------*/
+@media (max-width: 767px) {
+	.block2 {
+	    height: 948px;
 	}
 	.block2 .text h2 {
-	    padding-top: 123px;
+	    padding-top: 43px;
 	    color: #26a65b;
 	    font-weight: 700;
 	    letter-spacing: 5px;
-	    font-size: 45px;
 	    margin-left: 2px;
-	    margin-bottom: 76px;
+	    font-size: 34px;
+	    margin-bottom: 13px;
 	}
 	.block2 .text p {
-	    width: 310px;
+	    width: 280px;
 	    color: #231f20;
-	    font-size: 18px;
-	    line-height: 28px;
-	    margin-bottom: 28px;
+	    font-size: 15px;
+	    line-height: 22px;
+	    margin-bottom: 22px;
 	}
-	/*右---------*/
 	.block2 .blocks {
-	    float: right;
-	    width: 694px;
-	    padding-top: 95px;
+	    width: 320px;
+	    margin-left: -20px;
 	}
 	.block2 .blocks div[class^=service] {
 	    float: left;
-	    margin: 0 0 59px 51px;
+	    margin: 0 19px 5px;
 	    padding-left: 10px;
-	    width: 170px;
-	    height: 50px;
-	    padding-top: 155px;
+	    width: 110px;
+	    height: 40px;
+	    padding-top: 115px;
 	    color: #181c1c;
-	    font-size: 20px;
+	    font-size: 14px;
+	    font-weight: 700;
 	}
-	.block2 .blocks .service1 {
-	    background: url(../images/ship.svg) 10px 34px no-repeat;
-	    background-size: 87px auto;
-	}
-	.block2 .blocks .service2 {
-	    background: url(../images/doc.svg) 12px 33px no-repeat;
-	    background-size: 72px auto;
-	}
-	.block2 .blocks .service3 {
-	    background: url(../images/docs.svg) 10px 33px no-repeat;
-	    background-size: 61px auto;
-	}
-	.block2 .blocks .service4 {
-	    background: url(../images/import.svg) 13px 7px no-repeat;
-	    background-size: 109px auto;
-	}
-	.block2 .blocks .service5 {
-	    background: url(../images/export.svg) 20px 24px no-repeat;
-	    background-size: 82px auto;
-	}
-	.block2 .blocks .service6 {
-	    background: url(../images/audit.svg) 1px 26px no-repeat;
-	    background-size: 68px auto;
-	}
-	/*图片底下文字-------*/
 	.block2 .blocks div[class^=service] span {
 	    font-weight: 700;
 	    border-bottom: 1px solid #181c1c;
-	    padding-bottom: 5px;
-	    line-height: 33px;
+	    padding-bottom: 3px;
+	    line-height: 24px;
 	}
-	/*右下----------*/
+	.block2 .blocks .service1 {
+	    background: url(../images/ship.svg) 10px 27px no-repeat;
+	    background-size: 64px auto;
+	}
+	.block2 .blocks .service2 {
+	    background: url(../images/doc.svg) 11px 28px no-repeat;
+	    background-size: 52px auto;
+	}
+	.block2 .blocks .service3 {
+	    background: url(../images/docs.svg) 10px 30px no-repeat;
+	    background-size: 44px auto;
+	}
+	.block2 .blocks .service4 {
+	    background: url(../images/import.svg) 11px 17px no-repeat;
+	    background-size: 80px auto;
+	}
+	.block2 .blocks .service5 {
+	    background: url(../images/export.svg) 10px 21px no-repeat;
+	    background-size: 60px auto;
+	}
+	.block2 .blocks .service6 {
+	    background: url(../images/audit.svg) 7px 22px no-repeat;
+	    background-size: 50px auto;
+	}
 	.block2 .blocks .wecandomore {
 	    width: 250px;
+	    top: 47px;
 	    height: 30px;
 	    color: #26a65b;
 	    border-radius: 3px;
@@ -1130,12 +2019,16 @@ li {
 	    text-align: center;
 	    line-height: 32px;
 	    font-size: 15px;
-	    margin-left: 51px;
+	    margin-left: 25px;
 	    border: 1px solid #26a65b;
 	}
 	.block2 .blocks .wecandomore:hover {
-		background:#26a65b;
-		color:#fefefe;
+	    background: #26a65b;
+	    color: #fefefe;
+	}
+	.block2 .blocks .wecandomore:hover::before {
+	    -webkit-filter: brightness(100);
+	    filter: brightness(100);
 	}
 	.block2 .blocks .wecandomore::before {
 	    content: '';
@@ -1148,23 +2041,22 @@ li {
 	    top: 11px;
 	    right: 16px;
 	}
-	.block2 .blocks .wecandomore:hover::before {
-	    -webkit-filter: brightness(100);
-	    filter: brightness(100);
-	}
 }
-
-
-/*模块三-----------------*/
-
-@media (min-width: 1144px) {
-	/*动画----------------*/
+/*模块三-----------------------*/
+@media (max-width: 767px) {
+	.block3 {
+	    background: #5dbfc0;
+	    padding-top: 51px;
+	    padding-bottom: 74px;
+	    position: relative;
+	}
 	.block3 .boat {
 	    z-index: 0;
 	    width: 793px;
 	    height: 520px;
 	    position: absolute;
 	    background: url(../images/bigship2.png) 50% 50% no-repeat;
+	    background-size: auto 373px;
 	    top: -640px;
 	    right: -990px;
 	}
@@ -1172,8 +2064,8 @@ li {
 	    will-change: transform;
 	    -webkit-animation: formboat 35s linear infinite;
 	    animation: formboat 35s linear infinite;
-	    -webkit-animation-delay: -4s;
-	    animation-delay: -4s;
+	    -webkit-animation-delay: -6s;
+	    animation-delay: -6s;
 	}
 	@keyframes formboat {
 		0% {
@@ -1185,69 +2077,62 @@ li {
 		    transform: translate(-1720px,1200px);
 		}
 	}
-	.block3 {
-	    background: #5dbfc0;
-	    padding-top: 118px;
-	    height: 507px;
-	    overflow: hidden;
-	    position: relative;
-	}
 	.block3 h2 {
 	    color: #fefefe;
-	    letter-spacing: 6px;
+	    letter-spacing: 2px;
 	    font-weight: 700;
-	    font-size: 49px;
-	    margin-bottom: 71px;
-	}
-	.f {
-	    display: block;
+	    font-size: 27px;
+	    line-height: 36px;
+	    margin-left: 5px;
+	    margin-bottom: 36px;
 	}
 	.block3 form {
-	    position: relative;
+	    margin-left: -9px;
+	}
+	.block3 form, .block3 h2 {
 	    z-index: 1;
-	    margin-left: -12px;
+	    position: relative;
 	}
 	.block3 form input[type=text] {
-	    width: 275px;
-	    height: 48px;
+	    width: 252px;
+	    height: 44px;
 	    padding-top: 8px;
+	    margin: 0 13px 23px;
 	    border: 1px solid #fefefe;
 	    border-radius: 3px;
 	}
 	.block3 form input[type=text], .block3 form textarea {
-	    font-size: 20px;
-	    margin: 0 13px 36px;
+	    font-size: 18px;
 	    padding-left: 20px;
 	    background: 0 0;
 	    color: #fefefe;
 	    float: left;
 	}
-	.block3 form input::-webkit-input-placeholder, .block3 form textarea::-webkit-input-placeholder {
-		color: #fff;
-		opacity: 1;
-	}
 	.block3 form textarea {
-	    width: 598px;
-	    height: 38px;
+	    width: 251px;
+	    height: 144px;
 	    padding-top: 18px;
+	    margin: 0 13px 47px;
 	    border: 1px solid #fefefe;
 	    border-radius: 3px;
 	    resize: none;
 	}
 	.block3 form input[type=submit] {
-	    width: 297px;
+	    clear: both;
+	    margin-right: 100px;
+	    width: 274px;
 	    border: none;
-	    height: 58px;
+	    height: 54px;
 	    background: #26a65b;
 	    color: #fefefe;
 	    font-weight: 700;
 	    text-align: center;
-	    line-height: 58px;
+	    line-height: 59px;
 	    border-radius: 3px;
 	    letter-spacing: 3px;
 	    margin-left: 13px;
 	    cursor: pointer;
-	    font-size: 24px;
+	    font-size: 23px;
 	}
 	.block3 form input[type=checkbox] {
 	    display: none;
@@ -1256,21 +2141,26 @@ li {
 	    color: #fff;
 	    display: block;
 	    font-size: 13px;
-	    line-height: 35px;
+	    line-height: 24px;
 	    margin-left: 13px;
 	    padding-left: 40px;
 	    cursor: pointer;
+	    padding-top: 23px;
 	    position: relative;
 	    clear: both;
 	}
+	.block3 form input::-webkit-input-placeholder, .block3 form textarea::-webkit-input-placeholder {
+		color: #fff;
+		opacity: 1;
+	}
 	.block3 form .agreetosend::after, .block3 form .agreetosend::before {
 	    position: absolute;
-	    display: block;
 	    content: '';
+	    display: block;
 	}
 	.block3 form .agreetosend::before {
 	    left: 0;
-	    top: 6px;
+	    top: 29px;
 	    cursor: pointer;
 	    width: 20px;
 	    height: 20px;
@@ -1280,61 +2170,61 @@ li {
 	}
 	.block3 form .agreetosend::after {
 	    left: 4px;
-	    top: 12px;
+	    top: 35px;
 	    opacity: 1;
 	    width: 13px;
 	    height: 8px;
 	    background: url(../images/agree.svg) 50% 50%/13px auto no-repeat;
 	}
-	
 }
-
-
-
-
-/*模块五-----------------------*/
-@media (min-width: 1144px) {
+/*模块五----------------------------*/
+@media (max-width: 767px) {
+	.block5 .wrapper {
+		width: 90%;
+	}
 	.block5 {
 	    position: relative;
-	    height: 640px;
+	    height: 450px;
 	}
 	.block5 ul, .block5 ul li {
-	    height: 670px;
+	    height: 450px;
 	}
 	.block5 ul li .india {
-	    background-image: url(../images/card1.jpg);
+	    background-image: url(../images/card.jpg);
+	    background-position: 35% 50%;
 	}
 	.block5 ul li .zuma {
-	    background-image: url(../images/card3.jpg);
+	    background-image: url(../images/card1.jpg);
 	}
 	.block5 ul li .rice {
 	    background-image: url(../images/card2.jpg);
+	    background-position: 45% 50%;
 	}
 	.block5 ul li .europe {
-	    background-image: url(../images/card.jpg);
+	    background-image: url(../images/card3.jpg);
+	    background-position: 20% 50%;
 	}
 	.block5 ul li .case {
-	    height: 670px;
+	    height: 450px;
 	    color: #fefefe;
 	    width: 100%;
 	    box-sizing: border-box;
-	    padding-top: 139px;
+	    padding-top: 82px;
 	    background-size: cover;
 	    background-repeat: no-repeat;
 	    background-position: 50% 50%;
 	}
 	.block5 ul li .case h2 {
 	    font-weight: 700;
-	    line-height: 59px;
-	    font-size: 54px;
-	    width: 648px;
-	    margin-bottom: 67px;
+	    line-height: 34px;
+	    font-size: 25px;
+	    margin-bottom: 30px;
 	}
 	.block5 ul li .case p {
-	    width: 480px;
-	    line-height: 28px;
-	    font-size: 18px;
-	    margin-bottom: 48px;
+	    width: 280px;
+	    line-height: 22px;
+	    font-size: 14px;
+	    margin-bottom: 28px;
 	}
 	.block5 ul li .case .link {
 	    width: 110px;
@@ -1356,11 +2246,9 @@ li {
 	    color: #181c1c;
 	}
 	.block5 ul li .case .link::before {
-	    content: '';
 	    display: block;
 	    background: url(../images/arrowwhite.svg) 50% 50% no-repeat;
 	    background-size: 6px auto;
-	    position: absolute;
 	    width: 6px;
 	    height: 10px;
 	    top: 11px;
@@ -1370,233 +2258,95 @@ li {
 	    -webkit-filter: brightness(0);
 	    filter: brightness(0);
 	}
-
-	/*圆点----------*/
+	.block5 ul li .case .link::before, .truckfoot {
+	    content: '';
+	    position: absolute;
+	}
 	.block5 .bx-pager {
 	    position: absolute;
-	    top: 537px;
+	    top: 403px;
 	    margin: 0 auto;
 	    left: 0;
-	    right: 948px;
-	    width: 200px;
+	    right: 184px;
+	    width: 90px;
+	}
+	.block5 .bx-pager .bx-pager-item a.active {
+	    margin: 0 2px;
+	    width: 18px;
+	    height: 18px;
+	    background-color: #26a65b;
 	}
 	.block5 .bx-pager .bx-pager-item a {
 	    display: block;
 	    float: left;
-	    height: 15px;
+	    height: 10px;
 	    text-indent: 100%;
 	    overflow: hidden;
-	    width: 15px;
+	    width: 10px;
 	    border-radius: 50%;
-	    margin: 6px 9px;
+	    margin: 4px 6px;
 	    background-color: #fefefe;
 	}
-	.block5 .bx-pager .bx-pager-item a.active {
-	    margin: 0 3px;
-	    width: 27px;
-	    height: 27px;
-	    background-color: #26a65b;
-	}
-	.block5 .bx-pager .bx-pager-item a:hover {
-		cursor: pointer;
-	}
 }
-
-
-/*模块六------------------------*/
-@media (min-width: 1144px) {
+/*模块六----------------------------*/
+@media (max-width: 767px) {
 	.block6 {
-	    height: 475px;
+	    height: 372px;
 	    max-width: 100%;
-	    margin: 0 auto;
-	    position: relative;
 	}
 	.block6 h2 {
-	    padding-top: 116px;
-	    margin-bottom: 60px;
-	    margin-left: -3px;
-	    color: #26a65b;
-	    font-size: 66px;
-	    letter-spacing: 7px;
+		color: #26a65b;
 	    font-weight: 700;
+	    margin-left: 2px;
+	    font-size: 37px;
+	    letter-spacing: 3px;
+	    padding-top: 59px;
 	}
 	.block6 .bx-viewport {
 	    margin: 0 auto;
-	    width: 1144px!important;
-	    z-index: 10;
+	    overflow: visible!important;
 	}
 	.block6 .bxsliderpartners {
-	    height: 150px;
+	    margin-top: 60px;
+	    height: 100px;
 	}
 	.block6 .bxsliderpartners li {
 	    height: 150px;
-	    width: 190px!important;
-	    -webkit-filter: grayscale(100%);
-	    filter: grayscale(100%);
-	    -webkit-transition: -webkit-filter .5s ease,filter .5s ease;
-	    transition: filter .5s ease;
+	    width: 200px!important;
 	}
-	.block6 .bxsliderpartners li:hover {
-	    -webkit-filter: none;
-	    filter: none;
-	}
-	/*左右箭头-------*/
 	.block6 .bx-controls {
-	    position: absolute;
-	    width: 95%;
-	    left: 0;
-	    right: 0;
-	    margin: 0 auto;
-	    z-index: 0;
-	    top: 315px;
-	}
-	.block6 .bx-controls .bx-controls-direction .bx-next, 
-	.block6 .bx-controls .bx-controls-direction .bx-prev {
-	    float: left;
-	    display: block;
-	    text-indent: 100%;
-	    overflow: hidden;
-	    white-space: nowrap;
-	    width: 17px;
-	    z-index: 90;
-	    height: 29px;
-	    background: url(../images/arrow.svg) 50% 50% no-repeat;
-	    background-size: 17px auto;
-	    -webkit-filter: grayscale(100%);
-	    filter: grayscale(100%);
-	    opacity: .5;
-	    -webkit-transform: rotate(180deg);
-	    transform: rotate(180deg);
-	}
-	.block6 .bx-controls .bx-controls-direction .bx-next:hover, 
-	.block6 .bx-controls .bx-controls-direction .bx-prev:hover {
-	    -webkit-filter: none;
-	    filter: none;
-	    opacity: 1;
-	    cursor: pointer;
-	}
-	.block6 .bx-controls .bx-controls-direction .bx-next {
-	    float: right;
-	    -webkit-transform: rotate(0);
-	    transform: rotate(0);
+	    display: none;
 	}
 }
-
-
-/*模块truckfoot--------------*/
-@media (min-width: 1144px) {
-	.truckfoot {
-	    content: '';
-	    background: url(../images/truck2.png) calc(50% + 633px) 50% no-repeat;
-	    height: 632px;
-	    position: absolute;
-	    bottom: -297px;
-	    z-index: -1;
-	    width: 100%;
-	}
-}
-
-
-
-/*footer--------------------------*/
-@media (min-width: 1144px) {
+/*footer---------------------*/
+@media (max-width: 767px) {
 	footer {
-	    height: 151px;
+	    height: 120px;
 	    z-index: -1;
 	    color: #6e6471;
 	}
-	footer .row1, footer .row2 {
+	footer .row2 {
+	    padding-top: 19px;
+	    clear: both;
 	    position: relative;
 	    z-index: 200;
 	}
-	footer .row2 {
-	    padding-top: 65px;
-	    clear: both;
-	}
-	footer .madein {
-	    margin-right: 126px;
-	}
 	footer .row2 .madein {
-	    margin-top: 8px;
+	    margin-top: 4px;
+	    margin-bottom: 12px;
 	    font-weight: 700;
 	    font-size: 18px;
+	}
+	footer .row2 .madein span {
+	    color: #26a65b;
+	    font-weight: 700;
 	}
 	footer .row2 .copy {
 	    margin-top: 8px;
 	    letter-spacing: 2px;
 	    font-size: 15px;
 	}
-	footer .row2 .call {
-	    margin-left: 228px;
-	    width: 400px;
-	}
-	footer .row2 .call .tel {
-	    float: left;
-	    font-weight: 700;
-	    font-size: 18px;
-	    line-height: 32px;
-	}
-	footer .row2 .call .backcall {
-	    margin-left: 30px;
-	    margin-top: 2px;
-	    float: left;
-	    font-weight: 700;
-	    font-size: 15px;
-	    width: 150px;
-	    height: 27px;
-	    border: 1px solid #26a65b;
-	    color: #26a65b;
-	    line-height: 27px;
-	    text-align: center;
-	    border-radius: 3px;
-	    cursor: pointer;
-	}
-	footer .row2 .call .backcall:hover {
-	    background: #26a65b;
-	    color: #fefefe;
-	}
-	footer .row2 .madein span {
-	    color: #26a65b;
-	    font-weight: 700;
-	}
-	footer .row2 .call .tel:hover {
-	    color: #26a65b;
-	    cursor: pointer;
-	}
-	.f {
+	footer .s {
 	    display: block;
 	}
 }
-
-
-
-/* 回到顶部 */
-.top {
-	position: fixed;
-	height: 50px;
-	width: 50px;
-	bottom: -50px;
-	right: 50px;
-}
-.top a {
-	width: 100%;
-	height: 100%;
-	display: block;
-	border-radius: 50%;
-	background-color: rgba(0, 0, 0, .3);
-	-webkit-filter: opacity(.5);
-	filter: opacity(.5);
-	-webkit-transition: background-color .8s cubic-bezier(0.316967, 0.989541, 0.310022, 1);
-	-moz-transition: background-color .8s cubic-bezier(0.316967, 0.989541, 0.310022, 1);
-	transition: background-color .8s cubic-bezier(0.316967, 0.989541, 0.310022, 1);
-	background-image: url(../images/goTop.png);
-	background-size: 50px 50px;
-}
-.top a:hover {
-	-webkit-filter: none;
-	filter: none;
-	-webkit-transition: -webkit-filter .5s ease,filter .5s ease;
-	transition: filter .5s ease;
-}
-
-/* 回到顶部 */
